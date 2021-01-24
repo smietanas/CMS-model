@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px do remów */
+  scroll-behavior: smooth;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #181D23;
+  /* height: 100vh; */
+}
+
+.info-top h1,.info-box h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-top p {
+  font-size: 1.6rem;
+}
+
+.panel {
+  width: 1600px;
+  border: 1px solid #4B5769;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4B5769;
+
+}
+
+.panel-right {
+  background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+}
+
+
+.active {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/* ------------ */
+.date-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  color: #ffffff;
+}
+
+.date-box .day {
+  font-size: 2rem;
+}
+
+.date-box .time {
+  font-size: 4rem;
+}
+
+.date-box .date {
+  font-size: 1.8rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 530px;
+}
+
+.menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.menu a:hover,
+.featured-post:hover,.users-list li:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.menu-item i {
+  font-size: 5rem;
+  margin-bottom: 0.4em;
+}
+
+.menu-item p {
+  font-size: 1.5rem;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+}
+
+.info-box h3 {
+  font-size: 1.8rem;
+}
+
+.info-box p {
+  font-size: 1.5rem;
+}
+
+/* ------------------- */
+
+.main-stats h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-stat-box {
+  height: 160px;
+  border-radius: 15px;
+  transition: background-color .3s;
+  margin-bottom: 5px;
+}
+
+.main-stat-box h3 {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-stat-box p {
+  font-size: 1.2rem;
+}
+
+/* --------- */
+.main-table h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.main-table .table-dark {
+  background-color: transparent
+}
+
+.main-table thead,
+.main-table .dropdown-item {
+  font-size: 1.3rem;
+}
+
+.main-table tbody {
+  font-size: 1.2rem;
+}
+
+.main-table .btn {
+  font-size: 1.6rem;
+}
+
+.page-link {
+  padding: 0.5em 1em;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #FFF;
+  transition: color .3s, background-color .3s;
+}
+
+.page-link:hover {
+  color: #ddd;
+  background-color: rgba(255, 255, 255, .08);
+}
+
+/* aside */
+
+.aside h3 {
+  margin-bottom: 1em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo .logo-text {
+  font-size: 3rem;
+  text-shadow: 0 0 5px #fff;
+}
+
+.logo p {
+  font-size: 1.4rem;
+}
+
+.users-online p,
+.users-gender i {
+  font-size: 3.2rem;
+}
+
+.users-gender .fa-male {
+  text-shadow: 0 0 10px rgb(9, 255, 0);
+}
+
+.users-gender .fa-female {
+  text-shadow: 0 0 10px rgb(0, 110, 255);
+}
+
+.users-gender p {
+  font-size: 2.6rem;
+}
+
+.monthly-stats .form-control,
+.monthly-stats option {
+  font-size: 1.4rem;
+}
+
+.monthly-stats .info,
+.featured-post .card-title {
+  font-size: 1.6rem;
+}
+
+.monthly-stats .numer,
+.featured-post .card-body {
+  font-size: 1.2rem;
+}
+
+/* posts */
+.posts h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.featured-post .btn {
+  font-size: 1.6rem;
+}
+
+.user-box__img {
+  height: 200px;
+  background-size: 100%;
+  background-position: center;
+  opacity: 0.5;
+  transition: opacity .3s ease,background-size .3s ease;
+}
+
+.user-box__img:hover {
+  background-size: 110%;
+  opacity: 1;
+}
+
+.one{
+  background-image: url('./img/user1.jpg');
+}
+.two{
+  background-image: url('./img/user2.jpg');
+}
+.three{
+  background-image: url('./img/user3.jpg');
+}
+
+.user-box__text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.find-post,
+.find-post input,
+.find-post .btn,
+.find-post .dropdown-item {
+    font-size: 1.6rem;
+}
+
+.posts-modal h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.posts-modal p,
+.posts-modal .btn {
+  font-size: 1.3rem;
+}
+
+.posts-modal .modal-body .btn {
+  text-transform: uppercase;
+}
+
+/* users */
+
+.users-list li{
+  padding: .5em 1em;
+  margin: 0.2em 0;
+  font-size: 2rem;
+}
+.users-list .btn{
+font-size: 1.6rem;
+}
+
+.users-list .list-group-item{
+  border: 1px solid #fff;
+}
+
+.user-search label,
+.user-search input, 
+.user-search select {
+  font-size: 1.6rem;
+}
+
+.user-search .btn {
+  font-size: 2rem;
+}
+
+.modal-content h3.card-title {
+  font-size: 2.6rem;
+}
+
+.modal-content label,
+.modal-content .newsletter,
+.modal-content select,
+.modal-content input,
+.modal-footer .btn {
+  font-size: 1.6rem;
+}
